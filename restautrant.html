@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Royal Cafe Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fffaf0;
+            color: #333;
+        }
+
+        header {
+            background-color: #3b2115;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #a64b2a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+            font-weight: bold;
+        }
+
+        .banner {
+            background-color: #f2d4b5;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .banner h2 {
+            font-size: 35px;
+            color: #6b321c;
+        }
+
+        section {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #cccccc;
+        }
+
+        .card h3 {
+            color: #a64b2a;
+        }
+
+        .price {
+            color: #218838;
+            font-weight: bold;
+        }
+
+        .reservation {
+            background-color: #f2d4b5;
+        }
+
+        input, select, textarea {
+            width: 90%;
+            max-width: 400px;
+            padding: 12px;
+            margin: 8px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #a64b2a;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #3b2115;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .banner h2 {
+                font-size: 26px;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Royal Cafe Restaurant</h1>
+    <p>Delicious Food | Beautiful Moments</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#chefs">Chefs</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#reservation">Reservation</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="banner" id="home">
+    <h2>Welcome to Royal Cafe</h2>
+    <p>Enjoy delicious food in a warm and comfortable atmosphere.</p>
+    <a href="#menu">Explore Our Menu</a>
+</div>
+
+<section id="menu">
+    <h2>Our Menu</h2>
+
+    <div class="container">
+        <div class="card">
+            <h3>Veg Pizza</h3>
+            <p>Fresh vegetables and cheese.</p>
+            <p class="price">₹199</p>
+        </div>
+
+        <div class="card">
+            <h3>Chicken Biryani</h3>
+            <p>Traditional spicy chicken biryani.</p>
+            <p class="price">₹249</p>
+        </div>
+
+        <div class="card">
+            <h3>Veg Burger</h3>
+            <p>Crispy patty with fresh vegetables.</p>
+            <p class="price">₹129</p>
+        </div>
+
+        <div class="card">
+            <h3>Chocolate Cake</h3>
+            <p>Rich and delicious chocolate cake.</p>
+            <p class="price">₹99</p>
+        </div>
+
+        <div class="card">
+            <h3>Cappuccino</h3>
+            <p>Freshly prepared coffee.</p>
+            <p class="price">₹89</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Our Restaurant Ambience</h2>
+    <div class="container">
+        <div class="card">
+            <h3>Cozy Dining</h3>
+            <p>Comfortable seating for family and friends.</p>
+        </div>
+
+        <div class="card">
+            <h3>Beautiful Interiors</h3>
+            <p>Elegant decorations and a relaxing atmosphere.</p>
+        </div>
+
+        <div class="card">
+            <h3>Fresh Food</h3>
+            <p>Quality ingredients and delicious flavors.</p>
+        </div>
+    </div>
+</section>
+
+<section id="chefs">
+    <h2>Meet Our Chefs</h2>
+    <div class="container">
+        <div class="card">
+            <h3>Chef Rahul</h3>
+            <p>Specialist in Indian cuisine.</p>
+        </div>
+
+        <div class="card">
+            <h3>Chef Priya</h3>
+            <p>Expert in desserts and bakery.</p>
+        </div>
+
+        <div class="card">
+            <h3>Chef Arjun</h3>
+            <p>Specialist in Italian dishes.</p>
+        </div>
+    </div>
+</section>
+
+<section id="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="container">
+        <div class="card">
+            <p>"Excellent food and friendly service!"</p>
+            <h4>- Ravi</h4>
+        </div>
+
+        <div class="card">
+            <p>"A wonderful place to enjoy with family."</p>
+            <h4>- Sneha</h4>
+        </div>
+
+        <div class="card">
+            <p>"Great coffee and a peaceful atmosphere."</p>
+            <h4>- Kiran</h4>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Opening Hours</h2>
+    <p>Monday - Friday: 10:00 AM - 10:00 PM</p>
+    <p>Saturday - Sunday: 9:00 AM - 11:00 PM</p>
+</section>
+
+<section class="reservation" id="reservation">
+    <h2>Reserve Your Table</h2>
+    <p>Fill in the form to request a reservation.</p>
+
+    <form action="#" method="post">
+        <input type="text" name="name"
+               placeholder="Your Name" required><br>
+
+        <input type="email" name="email"
+               placeholder="Your Email" required><br>
+
+        <input type="tel" name="phone"
+               placeholder="Phone Number" required><br>
+
+        <input type="date" name="date" required><br>
+
+        <input type="time" name="time" required><br>
+
+        <select name="guests" required>
+            <option value="">Number of Guests</option>
+            <option>1 Person</option>
+            <option>2 People</option>
+            <option>3 People</option>
+            <option>4 People</option>
+            <option>5 or More</option>
+        </select><br>
+
+        <textarea name="message"
+                  placeholder="Special Requests"></textarea><br>
+
+        <button type="submit">Reserve Now</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> Main Road, Hyderabad, Telangana</p>
+    <p><strong>Phone:</strong> 98765 43210</p>
+    <p><strong>Email:</strong> royalcafe@example.com</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Royal Cafe Restaurant</p>
+    <p>Thank you for visiting us!</p>
+</footer>
+
+</body>
+</html>
